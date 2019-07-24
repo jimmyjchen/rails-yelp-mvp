@@ -1,0 +1,23 @@
+<h1>Restaurant List</h1>
+
+<% @restaurants.each do |restaurant| %>
+  <div class="card">
+    <div class="card-body card-list">
+      <div class="list-item">
+        <div>
+          <%= link_to restaurant.name, restaurant_path(restaurant.id) %>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
+<div class="card">
+  <div class="card-body card-list">
+    <a href="tasks/new">
+      <div>
+        <i class="fas fa-plus"></i>
+        <span>Add a new restaurant</span>
+      </div>
+    </a>
+  </div>
+</div>

@@ -1,0 +1,55 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  margin: 20px
+}
+
+.card-body {
+  background-color: rgb(245,245,245);
+}
+
+.card-body.card-list {
+  background-color: white;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 35%;
+}
+
+.fa-trash-alt {
+  color: rgb(100,100,100)
+}
+
+#button-edit {
+  background-color: rgb(245,245,245);
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(220,220,220,0.9);
+  color: rgb(100,100,100)
+}
+
+#button-edit:hover {
+  color: rgb(50,50,50)
+}
