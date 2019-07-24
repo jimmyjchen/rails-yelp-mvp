@@ -26,7 +26,16 @@
     <div class="card-body card-list">
       <div class="list-item">
         <div>
-          <%= review.rating %><span>/5</span>
+          <% i = 0 %>
+          <% while i < review.rating %>
+            <i class="fas fa-star" style="color: #ede202"></i>
+            <% i += 1 %>
+          <% end %>
+          <% i = 5 %>
+          <% while i > review.rating %>
+            <i class="fas fa-star" style="color: #f0efda"></i>
+            <% i -= 1 %>
+          <% end %>
         </div>
         <div>
           <%= review.content %>

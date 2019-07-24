@@ -16,7 +16,7 @@ puts "Attempting to create 100 reviews..."
 
 100.times do
   Review.create!(
-    content: Faker::Hipster.paragraphs,
+    content: Faker::Hipster.paragraph,
     rating: (1..5).to_a.sample,
     restaurant_id: (21..40).to_a.sample
     )
